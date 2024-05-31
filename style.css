@@ -1,0 +1,581 @@
+/*
+Theme Name: testtheme
+Text Domain: testtheme
+Theme URI:
+Description: 
+Author:KOJO TEST
+Author URI: 
+Version: 15.21.1
+Requires at least: 5.9
+Tested up to: 6.5
+Requires PHP: 5.6.0
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Lightning WordPress theme, Copyright (C) 2015-2024 Vektor,Inc.
+Lightning WordPress theme is licensed under the GPL.
+
+Lightning WordPress Theme bundles the following third-party resources:
+
+Font Awesome icon font, Copyright 2012 Fonticons, Inc.
+its fonts are licensed under the terms of the SIL OFL License 1.1, and its code is licensed under the terms of the MIT license
+Source: https://fontawesome.com/
+
+Bootstrap framework, Copyright 2011 Bootstrap Authors and Twitter, Inc.
+Bootstrap is licensed under the terms of the MIT license
+Source: https://getbootstrap.com/
+
+CSS Simple Tree Shaking
+CSS Simple Tree Shaking is licensed under the terms of the GNU General Public License v2 license
+Source: https://celtislab.net/
+*/
+
+
+
+@charset "UTF-8";
+
+/*================================= 
+  共通
+================================= */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+  min-height: 100vh;
+}
+
+.noto-sans-jp-thin {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.noto-sans-jp-semibold {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.noto-sans-jp-bold {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nav-bottom-button {
+  display: none; /* 最初は非表示にする */
+}
+
+.text-orange {
+  color: #ff8000;
+}
+.text-green {
+  color: #2fc996;
+}
+.text-greengreen {
+  color: #00a99d;
+}
+.text-mostgreen {
+  color: #183834;
+}
+.text-moregreen {
+  color: #30554c;
+}
+.text-thinblack {
+  color: #191919;
+}
+
+/*================================= 
+  hero
+================================= */
+
+.sectionHero {
+  background-image: url("../image/bgimg_hero_pc.jpg");
+  width: 100%;
+  height: 964px;
+  background-size: cover;
+  background-position: right bottom;
+  overflow: hidden;
+}
+/* titleタグ */
+/* title_03　about50pxFont */
+.title-big {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+.sectionHero .title-big::after {
+  content: "";
+  display: block;
+  border-top: 1.5px solid #2fc996;
+  width: calc(740px);
+  margin-left: -5rem;
+  margin-top: 10px;
+}
+.a-shadow {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 9999px;
+  transition: box-shadow 0.5s ease;
+}
+.a-shadow:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  transform: translate(3px);
+}
+.aside-shadow {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 8px 0px 0px 8px;
+  transition: box-shadow 0.5s ease;
+}
+.aside-shadow:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  transform: translate(3px);
+}
+
+/*================================= 
+  nav
+================================= */
+.side-nav {
+  position: fixed;
+  top: 120px;
+  right: 0;
+}
+
+/*================================= 
+  explain
+================================= */
+.sectionExplain {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+/*================================= 
+  reason
+================================= */
+/* .sectionReason2 {
+  width: 100%;
+  background-image: url("../image/bgimg_reason_0102.jpg");
+  height: 1300px;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+} */
+.sectionReason {
+  width: 100%;
+  background-image: url("../image/bgimg_reason_01.jpg");
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+.sectionReasonTitle::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: calc(50% - (10% / 2));
+  margin-top: 10px;
+}
+
+.reason031 {
+  width: calc(1144px * 0.9);
+  background-image: url("../image/bgimg_reason_031.png");
+  height: calc(221px * 0.9);
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+.reason032 {
+  width: calc(1144px * 0.9);
+  background-image: url("../image/bgimg_reason_032.png");
+  height: calc(221px * 0.9);
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+.reason033 {
+  width: calc(1144px * 0.9);
+  background-image: url("../image/bgimg_reason_033.png");
+  height: calc(221px * 0.9);
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+/*================================= 
+  fivefunction
+================================= */
+.sectionFivefunction {
+  max-width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-tight h1 {
+  color: #2fc996;
+  font-size: 36px;
+  vertical-align: top;
+  padding-left: 25px;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+}
+.container-tight h2 {
+  color: #30554c;
+  font-size: 38px;
+  margin-top: -15px;
+  padding-left: 25px;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+.container-tight p {
+  color: #191919;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container-tight ul li {
+  color: #191919;
+  font-size: 18px;
+  text-indent: -20px !important;
+  padding-left: 20px !important;
+}
+.container-wide {
+  background-color: #ffffff;
+}
+.fivefunction-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 38% 54%;
+  gap: 8%;
+  min-height: 400px;
+  padding-bottom: 180px;
+}
+.fivefunction-containers {
+  max-width: 1200px;
+}
+.fivefunction-containers > :last-child {
+  padding-bottom: 0px;
+}
+.grid-reverse {
+  grid-template-columns: 54% 38%;
+}
+.title-line-col::before {
+  content: "";
+  height: 91px;
+  border: 4px solid #2fc996;
+  position: absolute;
+}
+.title-sup {
+  top: -0.4em;
+  font-size: 36px;
+}
+
+/*================================= 
+  example
+================================= */
+.sectionExample {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionExampleTitle::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #00a99d;
+  position: absolute;
+  left: calc(50% - (10% / 2));
+  margin-top: 10px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  max-width: 836px;
+}
+/*================================= 
+  attention
+================================= */
+/* .attention {
+  max-width: 100vw;
+  background-image: url("../image/bgimg_reason_02.png");
+  background-size: cover;
+  background-position: center center;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  padding-top: calc(558 / 1200 * 100%);
+  padding-bottom: 120px;
+} */
+
+/*================================= 
+  flow
+================================= */
+.sectionFlow {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionFlowTitle::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #00a99d;
+  position: absolute;
+  left: calc(50% - (10% / 2));
+  margin-top: 10px;
+}
+/*================================= 
+  plan
+================================= */
+.sectionPlanTitle::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #00a99d;
+  position: absolute;
+  left: calc(50% - (10% / 2));
+  margin-top: 10px;
+}
+.attention-plan {
+  list-style-type: "※";
+  list-style-position: inside;
+  text-indent: -16px !important;
+  padding-left: 20px !important;
+  line-height: 1.8rem;
+}
+section[class*="section-py"] {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.section-content {
+  width: 100%;
+  padding: 0px 12%;
+}
+.sectionPlan {
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+li[class^="planbox"] {
+  width: 100%;
+  height: 100px;
+  background: white;
+  padding: 8px 30px;
+  border-radius: 15px;
+  border: 4px solid;
+  box-sizing: border-box;
+  align-items: center;
+}
+li[class^="planbox"] h1 {
+  font-size: 30px;
+  letter-spacing: 8px;
+  font-weight: 500;
+  min-width: 225px;
+}
+li[class^="planbox"] .color3 {
+  padding: 0px 30px;
+}
+li[class^="planbox"] .amount {
+  font-size: 50px;
+  font-weight: 700;
+  align-self: center;
+}
+li[class^="planbox"] .yen {
+  font-weight: 700;
+  text-align: center;
+  font-size: 23px;
+  letter-spacing: 0.2rem;
+  align-self: center;
+  line-height: 25px;
+  padding-top: 10px;
+}
+li[class^="planbox"] .tax {
+  font-weight: 500;
+  font-size: 16px;
+}
+li[class*="color1"] {
+  color: #59b5d2;
+}
+li[class*="color2"] {
+  color: #9cbc3c;
+}
+p[class*="color3"] {
+  color: #000000;
+}
+
+/*================================= 
+  Support
+================================= */
+.sectionSupport {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionSupportTitle::before {
+  content: "";
+  display: block;
+  width: 95px;
+  height: 4px;
+  background: #00a99d;
+  position: absolute;
+  left: -90px;
+  bottom: 43%;
+  transform: rotate(-111deg);
+}
+.sectionSupportTitle::after {
+  content: "";
+  display: block;
+  width: 95px;
+  height: 4px;
+  background: #00a99d;
+  position: absolute;
+  right: -90px;
+  bottom: 43%;
+  transform: rotate(111deg);
+}
+li[class^="supportbox"] {
+  width: 45%;
+  height: auto;
+  background: white;
+  padding: 40px 40px 50px 40px;
+  border-radius: 20px;
+  border: 8px solid;
+  box-sizing: border-box;
+}
+li[class^="supportbox"] h1 {
+  font-size: 25px;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  min-width: 320px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+li[class^="supportbox"] .color6 {
+  padding: 0px 30px;
+}
+
+li[class*="color4"] {
+  color: #ffbd7b;
+}
+li[class*="color4"] h1 {
+  color: #ff8102 !important;
+}
+li[class*="color5"] {
+  color: #83dcbf;
+}
+li[class*="color5"] h1 {
+  color: #0caf79 !important;
+}
+p[class*="color6"] {
+  color: #191919;
+}
+.support-deco {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  justify-content: space-between;
+  min-gap: 600px;
+}
+.support-image {
+  margin-top: -172px;
+  width: min(600px, 80%);
+}
+
+/* decoline1~3 */
+.decoline1 {
+  position: relative;
+  height: auto;
+}
+.decoline1::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  background: url("../image/deco_vcutline.svg") no-repeat center top / 100% auto;
+  aspect-ratio: 1 / 0.1;
+  bottom: 0px;
+}
+.decoline2 {
+  position: relative;
+  height: auto;
+}
+.decoline2::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  background: url("../image/deco_vcutline.svg") no-repeat center top / 100% auto;
+  aspect-ratio: 1 / 0.1;
+  bottom: 0;
+}
+.decoline3 {
+  position: relative;
+  height: auto;
+}
+.decoline3::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  background: url("../image/deco_vcutline.svg") no-repeat center top / 100% auto;
+  aspect-ratio: 1 / 0.1;
+  bottom: 0;
+}
+
+/*================================= 
+  Faq
+================================= */
+.sectionFaq {
+  width: 100%;
+  background-image: url("../image/bgimg_faq_01.png");
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+.sectionFaqTitle::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  left: calc(50% - (10% / 2));
+  margin-top: 10px;
+}
+.section-content-tight {
+  width: 100%;
+  padding: 0px 25%;
+}
+
+/*================================= 
+  tel
+================================= */
+@media (min-width: 768px) {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
