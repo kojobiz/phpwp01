@@ -1,3 +1,14 @@
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package kojotrial_theme
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <title>Kojo Test | WordPress Azure</title>
-    <!-- css -->
-    <link rel="stylesheet" href="./style.css">
+    <!-- css/functions.php-->
+    <!-- <link rel="stylesheet" href="./style.css"> -->
     <!-- js -->
     <script src="https://cdn.tailwindcss.com"></script> 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

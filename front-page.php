@@ -217,13 +217,6 @@
                 <li><img src="/wp-content/uploads/2024/05/img_logosample.png" alt=""></li>
                 <li><img src="/wp-content/uploads/2024/05/img_logosample.png" alt=""></li>
                 <li><img src="/wp-content/uploads/2024/05/img_logosample.png" alt=""></li>
-                <li><img src="/wp-content/uploads/2024/05/img_logosample.png" alt=""></li>
-                <li><img src="/wp-content/uploads/2024/05/img_logosample.png" alt=""></li>
-                <li><img src="/wp-content/uploads/2024/05/img_logosample.png" alt=""></li>
-                <li><img src="/wp-content/uploads/2024/05/img_logosample.png" alt=""></li>
-                <li><img src="/wp-content/uploads/2024/05/img_logosample.png" alt=""></li>
-                <li><img src="/wp-content/uploads/2024/05/img_logosample.png" alt=""></li>
-                <li><img src="/wp-content/uploads/2024/05/img_logosample.png" alt=""></li>
                 
             </ul>
             <?php
