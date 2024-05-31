@@ -226,6 +226,32 @@
                 <li><img src="/wp-content/uploads/2024/05/img_logosample.png" alt=""></li>
                 
             </ul>
+            <?php
+                // 使用するフィールドと取得数設定
+                $args = Array (
+                    'post_type' => 'achievement_banner',
+                    'posts_per_page' => -1,
+                );
+                $the_query = new WP_Query($args);
+                if($the_query -> have_posts()):
+            ?>
+                <ul class="m-results__list js-anim-batch">
+                    <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                        <?php if ( get_field( 'achievement_image' ) ): ?>
+                            <li>
+                                <?php if ( get_field( 'achievement_link') ): ?>
+                                    <a href="<?php echo get_field( 'achievement_link' ) ;?>"
+                                        target="_blank">
+                                <?php endif; ?>
+                                    <img src="<?php echo get_field( 'achievement_image' ) ;?>" alt="<?php the_title(); ?>">
+                                <?php if ( get_field( 'achievement_link' ) ): ?>
+                                    </a>
+                                <?php endif; ?>
+                            </li>
+                        <?php endif; ?>
+                    <?php endwhile; ?>
+                </ul>
+            <?php endif; wp_reset_postdata(); ?>
             <p class="my-12 text-sm">※企業ロゴの掲載は順不同です</p> 
         </section>
 
