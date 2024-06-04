@@ -36,7 +36,7 @@
             <h1 class="self-center title-explain text-[20px] text-thinblack">時間のかかる業務<span class="text-green text-[40px] align-sub pl-4 font-semibold">AIにまかせませんか？</span></h1>
             <p class="leading-[38px] self-center text-center">〇〇〇〇なら<br>社内外ドキュメントがマルっと取得可能！<br>必要なコンテンツもカスタム可能！</span></p>
             <img src="/wp-content/uploads/2024/05/img_exp_01.png" alt="イラスト：説明している" srcset="" class="explain-pc">
-            <img src="./image/img_exp_01_sp.png" alt="イラスト：説明している" srcset="" class="explain-sp">
+            <img src="/wp-content/uploads/2024/06/lead_img01_sp.jpg" alt="イラスト：説明している" srcset="" class="explain-sp">
         </section>
 
 
