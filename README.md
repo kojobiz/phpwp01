@@ -58,3 +58,46 @@ if ($achievement_image) {
     
     <p class="my-12 text-sm">※企業ロゴの掲載は順不同です</p> 
 </section>
+<section class="sectionExample py-[80px] decoline2" id="example">
+    <h1 class="text-[40px] self-center text-center text-greengreen font-semibold sectionExampleTitle mb-20">導入実績</h1>
+    
+    <?php
+    // 使用するフィールドと取得数設定
+    $args = array (
+        'post_type' => 'achievement_banner',
+        'posts_per_page' => -1,
+    );
+    $the_query = new WP_Query($args);
+    if($the_query->have_posts()):
+    ?>
+        <ul class="example-box">
+            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                <?php 
+                // 投稿メタデータの全体を表示
+                echo '<pre>';
+                var_dump(get_post_meta(get_the_ID()));
+                echo '</pre>';
+                
+                $achievement_image = get_field('achievement_image');
+                if ( $achievement_image ): ?>
+                    <li>
+                        <?php if ( get_field('achievement_link') ): ?>
+                            <a href="<?php echo esc_url(get_field('achievement_link')); ?>" target="_blank">
+                        <?php endif; ?>
+                            <img src="<?php echo esc_url($achievement_image['url']); ?>" alt="<?php echo esc_attr($achievement_image['alt']); ?>">
+                        <?php if ( get_field('achievement_link') ): ?>
+                            </a>
+                        <?php endif; ?>
+                    </li>
+                <?php else: ?>
+                    <li>No Image</li>
+                <?php endif; ?>
+            <?php endwhile; ?>
+        </ul>
+    <?php else: ?>
+        <p>No posts found</p>
+    <?php endif; wp_reset_postdata(); ?>
+    
+    <p class="my-12 text-sm">※企業ロゴの掲載は順不同です</p> 
+</section>
+チェック終わって正しく表示されたらエラーが出てくることもあるので、本番では削除すること
