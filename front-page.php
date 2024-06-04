@@ -217,7 +217,6 @@
                 <li><img src="/wp-content/uploads/2024/05/img_logosample.png" alt=""></li>
                 <li><img src="/wp-content/uploads/2024/05/img_logosample.png" alt=""></li>
                 <li><img src="/wp-content/uploads/2024/05/img_logosample.png" alt=""></li>
-                
             </ul>
             <?php
                 // 使用するフィールドと取得数設定
@@ -247,6 +246,78 @@
             <?php endif; wp_reset_postdata(); ?>
             <p class="my-12 text-sm">※企業ロゴの掲載は順不同です</p> 
         </section>
+
+        <section class="sectionExample py-[80px] decoline2" id="example">
+    <h1 class="text-[40px] self-center text-center text-greengreen font-semibold sectionExampleTitle mb-20">導入実績</h1>
+    
+    <?php
+    // 使用するフィールドと取得数設定
+    $args = array (
+        'post_type' => 'achievement_banner',
+        'posts_per_page' => -1,
+    );
+    $the_query = new WP_Query($args);
+    if($the_query->have_posts()):
+    ?>
+        <ul class="example-box">
+            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                <?php if ( get_field( 'achievement_image' ) ): ?>
+                    <li>
+                        <?php if ( get_field( 'achievement_link') ): ?>
+                            <a href="<?php echo esc_url( get_field( 'achievement_link' ) ); ?>" target="_blank">
+                        <?php endif; ?>
+                            <img src="<?php echo esc_url( get_field( 'achievement_image' ) ); ?>" alt="<?php the_title_attribute(); ?>">
+                        <?php if ( get_field( 'achievement_link' ) ): ?>
+                            </a>
+                        <?php endif; ?>
+                    </li>
+                <?php endif; ?>
+            <?php endwhile; ?>
+        </ul>
+    <?php endif; wp_reset_postdata(); ?>
+    
+    <p class="my-12 text-sm">※企業ロゴの掲載は順不同です</p> 
+</section>
+
+<!-- デバッグ用チェックコード -->
+<section class="sectionExample py-[80px] decoline2" id="example">
+    <h1 class="text-[40px] self-center text-center text-greengreen font-semibold sectionExampleTitle mb-20">導入実績</h1>
+    
+    <?php
+    // 使用するフィールドと取得数設定
+    $args = array (
+        'post_type' => 'achievement_banner',
+        'posts_per_page' => -1,
+    );
+    $the_query = new WP_Query($args);
+    if($the_query->have_posts()):
+    ?>
+        <ul class="example-box">
+            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                <?php 
+                $achievement_image = get_field('achievement_image');
+                if ( $achievement_image ): ?>
+                    <li>
+                        <?php if ( get_field('achievement_link') ): ?>
+                            <a href="<?php echo esc_url(get_field('achievement_link')); ?>" target="_blank">
+                        <?php endif; ?>
+                            <img src="<?php echo esc_url($achievement_image['url']); ?>" alt="<?php echo esc_attr($achievement_image['alt']); ?>">
+                        <?php if ( get_field('achievement_link') ): ?>
+                            </a>
+                        <?php endif; ?>
+                    </li>
+                <?php else: ?>
+                    <li>No Image</li> <!-- デバッグ用: 画像がない場合に表示 -->
+                <?php endif; ?>
+            <?php endwhile; ?>
+        </ul>
+    <?php else: ?>
+        <p>No posts found</p> <!-- デバッグ用: 投稿がない場合に表示 -->
+    <?php endif; wp_reset_postdata(); ?>
+    
+    <p class="my-12 text-sm">※企業ロゴの掲載は順不同です</p> 
+</section>
+
 
 
         <!------------------------------- 
