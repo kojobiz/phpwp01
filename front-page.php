@@ -367,7 +367,6 @@
             </div>
         </section>
 
-
         <!------------------------------- 
             attention
         -------------------------------->
@@ -385,6 +384,5 @@
                 <p class="self-center text-sm text-pink-500">電話番号テスト後差し替え</p>
                 <p class="self-center text-sm text-moregreen">受付時間  10:00~18:00【土日祝定休日】</p>
             </div>
-        </section>
-    
+        </section>  
 <?php get_footer(); ?>
