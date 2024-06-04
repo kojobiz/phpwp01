@@ -7,10 +7,10 @@
             <div class="pt-[8%] w-[760px] pl-20 max-md:pr-20">
                 <h1 class="title-big text-green">事業向けAIアシスタントで革命を</h1>
                 <p class="pt-[10px] text-mostgreen leading-[40px] pr-6 max-md:pl-6">〇〇を利用してAmazonなど、情報の安全性を確保しつつ、最新のAIテクノロジーを誰でも簡単に利用できる豊富な機能を提供。あらゆるシーンで、あなたの事業を強力にサポートします。</p>
-                <img src="./image/ico_hero_010203.png" alt="" class=" h-auto text-cent pl-[15%] pr-[15%] py-[40px]">
+                <img src="/wp-content/uploads/2024/05/ico_hero_010203.png" alt="" class=" h-auto text-cent pl-[15%] pr-[15%] py-[40px]">
                 <div class="flex flex-row max-md:flex-col max-md:items-center gap-[30px]">
-                    <a href="./contact.html" target="_blank" rel="noopener noreferrer"><img src="./image/btn_service_rounded.png" alt="" class="a-shadow max-md:w-[90%]"></a>
-                    <a href="./contact.html"><img src="./image/btn_trial_rounded.png" alt="" class="a-shadow max-md:w-[90%]"></a>
+                    <a href="./contact.html" target="_blank" rel="noopener noreferrer"><img src="/wp-content/uploads/2024/05/btn_service_rounded.png" alt="" class="a-shadow max-md:w-[90%]"></a>
+                    <a href="./contact.html"><img src="/wp-content/uploads/2024/05/btn_trial_rounded.png" alt="" class="a-shadow max-md:w-[90%]"></a>
                 </div>  
             </div>
         </section>
@@ -21,10 +21,10 @@
         -------------------------------->
         <div class="flex flex-col gap-[20px] h-auto side-nav z-50" id="side-nav">
             <a href="./contact.html" target="_blank" rel="noopener noreferrer">
-                <img src="./image/btn_service_side.png" alt="" class="w-[90%] aside-shadow ml-[11%] overflow-x-hidden">
+                <img src="/wp-content/uploads/2024/05/btn_service_side.png" alt="" class="w-[90%] aside-shadow ml-[11%] overflow-x-hidden">
             </a>
             <a href="./contact.html" target="_blank" rel="noopener noreferrer" >
-                <img src="./image/btn_trial_side.png" alt="" class="w-[90%] aside-shadow ml-[11%] overflow-x-hidden mt-[20px]">
+                <img src="/wp-content/uploads/2024/05/btn_trial_side.png" alt="" class="w-[90%] aside-shadow ml-[11%] overflow-x-hidden mt-[20px]">
             </a>
         </div>
 
@@ -35,7 +35,7 @@
         <section class="sectionExplain px-[15%] py-[80px] flex flex-col justify-between gap-[60px]" id="explain">
             <h1 class="self-center title-explain text-[20px] text-thinblack">時間のかかる業務<span class="text-green text-[40px] align-sub pl-4 font-semibold">AIにまかせませんか？</span></h1>
             <p class="leading-[38px] self-center text-center">〇〇〇〇なら<br>社内外ドキュメントがマルっと取得可能！<br>必要なコンテンツもカスタム可能！</span></p>
-            <img src="./image/img_exp_01.png" alt="イラスト：説明している" srcset="" class="explain-pc">
+            <img src="/wp-content/uploads/2024/05/img_exp_01.png" alt="イラスト：説明している" srcset="" class="explain-pc">
             <img src="./image/img_exp_01_sp.png" alt="イラスト：説明している" srcset="" class="explain-sp">
         </section>
 
@@ -69,13 +69,13 @@
         -------------------------------->
         <section class="bg-[#F2F2F2] pt-[50px] pb-[60px] flex flex-col content-center items-center sectionAttention">
             <div class="gap-[30px] btn-attention">
-                <a href="./contact.html" target="_blank" rel="noopener noreferrer"><img src="./image/btn_service_rounded.png" alt="" class="a-shadow buttton-form"></a>
-                <a href="./contact.html"><img src="./image/btn_trial_rounded.png" alt="" class="a-shadow buttton-form"></a>
+                <a href="./contact.html" target="_blank" rel="noopener noreferrer"><img src="/wp-content/uploads/2024/05/btn_service_rounded.png" alt="" class="a-shadow buttton-form"></a>
+                <a href="./contact.html"><img src="/wp-content/uploads/2024/05/btn_trial_rounded.png" alt="" class="a-shadow buttton-form"></a>
             </div>
             <div class="flex flex-col pt-6">
                 <div class="flex flex-row justify-center">
                     <p class="text-moregreen text-[28px] pr-3" >電話相談受付中！</p>
-                    <img src="./image/ico_reason_call.png" alt="" class="w-[36px] h-[30px] my-auto">
+                    <img src="/wp-content/uploads/2024/05/ico_reason_call.png" alt="" class="w-[36px] h-[30px] my-auto">
                     <a href="tel:117" class="text-moregreen text-[28px] font-semibold pl-3" >117</a>
                 </div>
                 <p class="self-center text-sm text-pink-500">電話番号テスト後差し替え</p>
@@ -105,11 +105,11 @@
                             <li>●ユーザー管理、コスト管理</li>
                         </ul>    
                     </div>
-                    <div class="container-wide"><img src="./image/img_function1_01.png" alt="" srcset="">
+                    <div class="container-wide"><img src="/wp-content/uploads/2024/05/img_function1_01.png" alt="" srcset="">
                     </div>
                 </li>
                 <li class="fivefunction-container grid-reverse">
-                    <div class="container-wide item1"><img src="./image/img_function5_01.png" alt="" srcset="">
+                    <div class="container-wide item1"><img src="/wp-content/uploads/2024/05/img_function5_01.png" alt="" srcset="">
                     </div>
                     <div class="container-tight item2">
                         <div class="title-line-col">
@@ -124,7 +124,7 @@
                     </div>
                 </li>
                 <li class="fivefunction-container grid-reverse">
-                    <div class="container-wide item1"><img src="./image/img_function5_01.png" alt="" srcset="">
+                    <div class="container-wide item1"><img src="/wp-content/uploads/2024/05/img_function5_01.png" alt="" srcset="">
                     </div>
                     <div class="container-tight item2">
                         <div class="title-line-col">
@@ -151,11 +151,11 @@
                             <li>●〇〇〇〇〇〇</li>
                         </ul>    
                     </div>
-                    <div class="container-wide"><img src="./image/img_function3_01.png" alt="" srcset="">
+                    <div class="container-wide"><img src="/wp-content/uploads/2024/05/img_function3_01.png" alt="" srcset="">
                     </div>
                 </li>
                 <li class="fivefunction-container grid-reverse point4-pc">
-                    <div class="container-wide"><img src="./image/img_function4_01.png" alt="" srcset="" class=""></div>
+                    <div class="container-wide"><img src="/wp-content/uploads/2024/05/img_function4_01.png" alt="" srcset="" class=""></div>
                     <div class="container-tight">
                         <div class="title-line-col">
                             <h1><sup class="title-sup">Point&ensp;4</sup></h1>
@@ -318,6 +318,47 @@
     <p class="my-12 text-sm">※企業ロゴの掲載は順不同です</p> 
 </section>
 
+<section class="sectionExample py-[80px] decoline2" id="example">
+    <h1 class="text-[40px] self-center text-center text-greengreen font-semibold sectionExampleTitle mb-20">導入実績</h1>
+    
+    <?php
+    // 使用するフィールドと取得数設定
+    $args = array (
+        'post_type' => 'achievement_banner',
+        'posts_per_page' => -1,
+    );
+    $the_query = new WP_Query($args);
+    if($the_query->have_posts()):
+    ?>
+        <ul class="example-box">
+            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                <?php 
+                $achievement_image = get_field('achievement_image');
+                // デバッグ用にカスタムフィールドの内容を表示
+                echo '<pre>';
+                var_dump($achievement_image);
+                echo '</pre>';
+                if ( $achievement_image ): ?>
+                    <li>
+                        <?php if ( get_field('achievement_link') ): ?>
+                            <a href="<?php echo esc_url(get_field('achievement_link')); ?>" target="_blank">
+                        <?php endif; ?>
+                            <img src="<?php echo esc_url($achievement_image['url']); ?>" alt="<?php echo esc_attr($achievement_image['alt']); ?>">
+                        <?php if ( get_field('achievement_link') ): ?>
+                            </a>
+                        <?php endif; ?>
+                    </li>
+                <?php else: ?>
+                    <li>No Image</li>
+                <?php endif; ?>
+            <?php endwhile; ?>
+        </ul>
+    <?php else: ?>
+        <p>No posts found</p>
+    <?php endif; wp_reset_postdata(); ?>
+    
+    <p class="my-12 text-sm">※企業ロゴの掲載は順不同です</p> 
+</section>
 
 
         <!------------------------------- 
@@ -325,13 +366,13 @@
         -------------------------------->
         <section class="bg-[#F2F2F2] pt-[50px] pb-[60px] flex flex-col content-center items-center sectionAttention">
             <div class="gap-[30px] btn-attention">
-                <a href="./contact.html" target="_blank" rel="noopener noreferrer"><img src="./image/btn_service_rounded.png" alt="" class="a-shadow buttton-form"></a>
-                <a href="./contact.html"><img src="./image/btn_trial_rounded.png" alt="" class="a-shadow buttton-form"></a>
+                <a href="./contact.html" target="_blank" rel="noopener noreferrer"><img src="/wp-content/uploads/2024/05/btn_service_rounded.png" alt="" class="a-shadow buttton-form"></a>
+                <a href="./contact.html"><img src="/wp-content/uploads/2024/05/btn_trial_rounded.png" alt="" class="a-shadow buttton-form"></a>
             </div>
             <div class="flex flex-col pt-6">
                 <div class="flex flex-row justify-center">
                     <p class="text-moregreen text-[28px] pr-3" >電話相談受付中！</p>
-                    <img src="./image/ico_reason_call.png" alt="" class="w-[36px] h-[30px] my-auto">
+                    <img src="/wp-content/uploads/2024/05/ico_reason_call.png" alt="" class="w-[36px] h-[30px] my-auto">
                     <a href="tel:117" class="text-moregreen text-[28px] font-semibold pl-3" >117</a>
                 </div>
                 <p class="self-center text-sm text-pink-500">電話番号テスト後差し替え</p>
@@ -347,7 +388,7 @@
             <h1 class="text-[40px] self-center text-center text-greengreen font-semibold sectionFlowTitle mb-20">導入までの流れ</h1>
             <p class="leading-[38px] self-center text-center pb-[80px]">ご成約からおおよそ1.5ヶ月で納品となります<br>
                 個別開発がある場合は開発要件に応じてスケジュール調節をさせて頂きます</span></p>
-            <img src="./image/img_flow_pc.png" alt="イラスト：説明している" srcset="" class="flow-pc">
+            <img src="/wp-content/uploads/2024/05/img_schedule_pc.png" alt="イラスト：説明している" srcset="" class="flow-pc">
             <img src="./image/img_flow_sp.png" alt="イラスト：説明している" srcset="" class="flow-sp">
         </section>
 
