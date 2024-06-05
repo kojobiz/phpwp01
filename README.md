@@ -101,3 +101,22 @@ if ($achievement_image) {
     <p class="my-12 text-sm">※企業ロゴの掲載は順不同です</p> 
 </section>
 チェック終わって正しく表示されたらエラーが出てくることもあるので、本番では削除すること
+
+## contact.phpのページだけにcontact.cssを読み込ませたい
+・style.css以外のcssファイルにはメタ情報は必要ないけど、コメントアウトでこういう情報を書いていると後でわかりやすい
+/*
+Contact Page Styles
+This file contains styles specific to the contact page template.
+*/
+・functions.phpには
+function add_files() {
+    // 共通のスタイルシートを読み込む
+    wp_enqueue_style('main-style', get_stylesheet_uri());
+
+    // Contact ページのスタイルシートを条件付きで読み込む
+    if (is_page_template('contact.php')) {
+        wp_enqueue_style('contact-style', get_template_directory_uri() . '/contact.css');
+    }
+}
+// 追加したファイルを呼び出す
+add_action('wp_enqueue_scripts', 'add_files');などと書く

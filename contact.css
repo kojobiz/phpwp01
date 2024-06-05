@@ -1,0 +1,226 @@
+/*
+Contact Page Styles
+This file contains styles specific to the contact page template.
+*/
+
+@charset "UTF-8";
+
+/*================================= 
+  contact
+================================= */
+.brandcolor_bg {
+    background-color:#2fc996;
+}
+.callinformation_text_color {
+    color:#30554c;
+}
+.contact_header {
+    width:100%;
+    height:152px;
+    position:relative;
+}
+.contact_header .title_03 {
+    color: white;
+    padding-top: 2.3rem;
+    text-align: center;
+    padding-bottom:1rem;
+    font-size:35px;
+    font-weight:400;
+}
+.contact_header .title_03::after {
+    content:"";
+    display:block;
+    width:120px;
+    height:2px;
+    background:white;
+    position:absolute;
+    top:calc(7rem);
+    left:calc(50% - 60px);
+}
+
+
+
+
+.contact_header_line {
+    width: 120px;
+    border: 1.5px solid white;
+    margin-left:auto;
+    margin-right:auto;
+}
+.text_20_1.2 { 
+    font-size: 20px;
+    lign-height:1.2rem;
+}
+.callpattern {
+    max-width: 600px;
+    margin-left:auto;
+    margin-right:auto;
+    height: 120px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding-top:12px;
+}
+.callpattern_inner {
+    color:white;
+    width:80%;
+    height:30px;
+    border-radius:23px;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing:0.3rem;
+    margin:0px auto;
+}
+.callinformation {
+    display: flex;
+    flex-direction: row;
+}
+.callinformation img {
+    width:calc(39px / 1.3);
+    height:calc(36px / 1.3);
+}
+.call_number {
+    font-size:41px;
+    font-weight:700;
+}
+.call_time {
+    font-size:14px;
+}
+
+
+/* コンタクトフォーム */
+section.contactform {
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    max-width:80%;
+    border-top: 2px solid #d1d5db;  /* 上の線 */
+    border-bottom: 2px solid #d1d5db;  /* 下の線 */
+    padding: 10px 0;
+}
+section.contactform-grid {
+    align-items:center;
+    justify-items:start;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.8fr 0.5fr 2fr;
+    grid-gap: 10px;
+    padding-top:20px;
+}
+.input-text-width {
+    max-width:694px;
+    min-width:400px;
+}
+.inputarea-text-width {
+    max-width:694px;
+    min-width:400px;
+    height:250px;
+}
+.form_item2 {
+    width:800px;
+    height:80px;
+    border-top: dashed #d1d1d1 1px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+.about {
+    color:#1a7959;
+}
+.about::after {
+    background-image:url('../image/ico_link.svg');
+    width:15px;
+    height:15px;
+    content:"";
+    display: inline-block;
+    margin-left:4px;
+}
+#submitBtn {
+    background-color:white;
+}
+.form_item2 h2 {
+    width:45%;
+    
+}
+/* .form_item2 h2:after {
+    content:"必須";
+    letter-spacing:3px;
+    padding:3px 10px;
+    background-color:#2fc996;
+    color: white;
+    border-radius:4px;
+    font-weight:300;
+    position:absolute;
+    left:30%
+} */
+.required-label {
+    content:"必須";
+    letter-spacing:3px;
+    padding:3px 10px;
+    background-color:#2fc996;
+    color: white;
+    border-radius:4px;
+    font-weight:300;
+    height:30px;
+}
+.form_item2 p {
+    padding-left:50px;
+}
+#submitBtn {
+    opacity: 0.5;
+    pointer-events: none;
+}
+#submitBtn.active {
+    opacity: 1; 
+    pointer-events: auto; 
+}
+#submitBtn:hover.active {
+    background-color: #2fc996;
+}
+.confirm-box {
+    display:flex;
+    flex-direction:row; 
+    margin-left:10%;
+    margin-right:10%;
+}
+.btn-choice {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    align-content:center;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+/* confirm　css */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #bdbdbd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #D6f6ec;
+    width: 50%;
+}
+td {
+    width: 50%;
+}
+
+
+
+@media (max-width: 767px) {
+    .title_03 {
+        font-size:20px;
+    }
+    .callinformation {
+        flex-direction: column;
+    }
+}

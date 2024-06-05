@@ -6,8 +6,8 @@
     <title>testsgcdemosite01</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./contact.css">
     <!-- js -->
     <script src="https://cdn.tailwindcss.com"></script> 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -132,140 +132,7 @@
 
 
 
-        <!-- セクション：入力フォーム -->
-        <!-- <section class="contactform"> 
-            
-            <div class="form_item2">       
-                <h2>ご用件</h2>
-                <br>
-                <div class="flex flex-row justify-center space-x-4">
-                    <label class="inline-flex items-center">
-                      <input type="radio" class="form-radio" name="radio-option" value="option1">
-                      <span class="ml-2">資料請求を希望</span>
-                    </label>
-                    <label class="inline-flex items-center">
-                      <input type="radio" class="form-radio" name="radio-option" value="option2">
-                      <span class="ml-2">無料トライアルを希望</span>
-                    </label>
-                    <label class="inline-flex items-center">
-                      <input type="radio" class="form-radio" name="radio-option" value="option3">
-                      <span class="ml-2">その他</span>
-                    </label>
-                </div>
-            </div>
-            <div class="form_item2">       
-                <h2>会社名</h2>
-                <p><input type="text" class="border border-gray-300 p-2 rounded-md w-64" placeholder="例：株式会社システムサポート">
-                </p>
-            </div>
-            <div class="form_item2">       
-                <h2>氏名</h2>
-                <p><input type="text" class="border border-gray-300 p-2 rounded-md w-64" placeholder="例：シス田 サポ郎"></p>
-            </div>
-            <div class="form_item2">       
-                <h2>メールアドレス</h2>
-                <p><input type="text" class="border border-gray-300 p-2 rounded-md w-64" placeholder="例：×××＠×××.com"></p>
-            </div>
-            <div class="form_item2">       
-                <h2>ご用件</h2>
-                <p><input type="text" class="border border-gray-300 p-2 rounded-md w-64" placeholder="例：03-3342-9620"></p>
-            </div>
-            <div class="form_item2">       
-                <h2>お申し込み内容</h2>
-                <textarea class="border border-gray-300 p-2 rounded-md w-64 h-48" placeholder="お聞きしたい事などがあればご記入ください。"></textarea>
-
-            </div>
-            
-        <div class="form-item">
-
-        
-
-        [mwform_submitButton name="mwform_submitButton-645" confirm_value="確認画面へ" submit_value="送信する"]
-
-        </section> 
-        <section class="contactform"> 
-            <table>
-                <tr>
-                    <td>
-                        <h2>ご用件</h2>
-                    </td>
-                    <td class="required-label">
-                        必須
-                    </td>
-                    <td>
-                        <div class="flex flex-row justify-center space-x-4">
-                            <label class="inline-flex items-center">
-                                <input type="radio" class="form-radio" name="radio-option" value="option1">
-                                <span class="ml-2">資料請求を希望</span>
-                            </label>
-                            <label class="inline-flex items-center">
-                                <input type="radio" class="form-radio" name="radio-option" value="option2">
-                                <span class="ml-2">無料トライアルを希望</span>
-                            </label>
-                            <label class="inline-flex items-center">
-                                <input type="radio" class="form-radio" name="radio-option" value="option3">
-                                <span class="ml-2">その他</span>
-                            </label>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>会社名</h2>
-                    </td>
-                    <td class="required-label">
-                        必須
-                    </td>
-                    <td>
-                        <input type="text" class="border border-gray-300 p-2 rounded-md w-64" placeholder="例：株式会社システムサポート">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>氏名</h2>
-                    </td>
-                    <td class="required-label">
-                        必須
-                    </td>
-                    <td>
-                        <input type="text" class="border border-gray-300 p-2 rounded-md w-64" placeholder="例：シス田 サポ郎">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>メールアドレス</h2>
-                    </td>
-                    <td class="required-label">
-                        必須
-                    </td>
-                    <td>
-                        <input type="text" class="border border-gray-300 p-2 rounded-md w-64" placeholder="例：×××＠×××.com">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>ご用件</h2>
-                    </td>
-                    <td class="required-label">
-                        必須
-                    </td>
-                    <td>
-                        <input type="text" class="border border-gray-300 p-2 rounded-md w-64" placeholder="例：03-3342-9620">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>お申し込み内容</h2>
-                    </td>
-                    <td> -->
-                        <!-- 空セルを挿入 -->
-                    <!-- </td>
-                    <td>
-                        <textarea class="border border-gray-300 p-2 rounded-md w-64 h-48" placeholder="お聞きしたい事などがあればご記入ください。"></textarea>
-                    </td>
-                </tr>
-            </table>
-        </section> -->
+       
         <section class="contactform-grid flex flex-col"> 
             <h2>ご用件</h2>
             <div class="required-label">必須</div>
