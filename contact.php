@@ -5,6 +5,8 @@ Template Name: Contact Page
 get_header();
 ?>
 <section>
+  <p>テst</p>  
+<?php echo do_shortcode('[contact-form-7 id="1917c30" title="コンタクトフォームテスト"]'); ?>
     <div class="contact_header brandcolor_bg">
         <div>
             <h1 class="title_03">お申し込みフォーム</h1>

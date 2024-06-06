@@ -9,8 +9,8 @@
                 <p class="pt-[10px] text-mostgreen leading-[40px] pr-6 max-md:pl-6">〇〇を利用してAmazonなど、情報の安全性を確保しつつ、最新のAIテクノロジーを誰でも簡単に利用できる豊富な機能を提供。あらゆるシーンで、あなたの事業を強力にサポートします。</p>
                 <img src="/wp-content/uploads/2024/05/ico_hero_010203.png" alt="" class=" h-auto text-cent pl-[15%] pr-[15%] py-[40px]">
                 <div class="flex flex-row max-md:flex-col max-md:items-center gap-[30px]">
-                    <a href="https://kojotrial.azurewebsites.net/contact/" target="_blank" rel="noopener noreferrer"><img src="/wp-content/uploads/2024/05/btn_service_rounded.png" alt="" class="a-shadow max-md:w-[90%]"></a>
-                    <a href="https://kojotrial.azurewebsites.net/contact/"><img src="/wp-content/uploads/2024/05/btn_trial_rounded.png" alt="" class="a-shadow max-md:w-[90%]"></a>
+                    <a href="<?php echo home_url(); ?>/contact/" target="_blank" rel="noopener noreferrer"><img src="/wp-content/uploads/2024/05/btn_service_rounded.png" alt="" class="a-shadow max-md:w-[90%]"></a>
+                    <a href="<?php echo home_url(); ?>/contact/"><img src="/wp-content/uploads/2024/05/btn_trial_rounded.png" alt="" class="a-shadow max-md:w-[90%]"></a>
                 </div>  
             </div>
         </section>
