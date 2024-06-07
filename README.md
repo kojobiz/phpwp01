@@ -1,4 +1,7 @@
-## phpwp01 cmswp
+## phpwp01 cmswp 
+## ↓attention
+６月６日で最新のコードに切り替えたのでこちらは使用しないかも
+新しいコードはphpwp01new0606を使用中
 
 スタティックデータ：testdemosite01
 
