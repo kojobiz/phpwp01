@@ -129,3 +129,6 @@ wp_enqueue_style('main-style', get_stylesheet_uri());
 }
 // 追加したファイルを呼び出す
 add_action('wp_enqueue_scripts', 'add_files');などと書く
+
+## 20250124 
+git更新した
